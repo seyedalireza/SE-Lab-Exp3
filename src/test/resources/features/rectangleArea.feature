@@ -5,7 +5,7 @@ Feature:Rectangle Area Calculator
     When I calculate area of rectangle
     Then I expect the result 2
 
-  Scenario Outline: add two numbers
+  Scenario Outline: Compute area of rectangle
     Given height and width of rectangle, <height> and <width>
     When I calculate area of rectangle
     Then I expect the result <area>
@@ -21,7 +21,7 @@ Feature:Rectangle Area Calculator
     When change height to 2 and width to 3 then compute area
     Then I expect the result 6
 
-  Scenario Outline: add two numbers
+  Scenario Outline: Compute area of rectangle
     Given height and width of rectangle, <height> and <width>
     When change height to <new_height> and width to <new_width> then compute area
     Then I expect the result <area>
