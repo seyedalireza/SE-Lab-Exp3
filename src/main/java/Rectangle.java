@@ -11,4 +11,22 @@ public class Rectangle {
     public int computeArea() {
         return height * width;
     }
+
+    public Rectangle setHeight(int height) {
+        this.height = height;
+        return this;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    public Rectangle setWidth(int width) {
+        this.width = width;
+        return this;
+    }
+
+    public int getWidth() {
+        return width;
+    }
 }
