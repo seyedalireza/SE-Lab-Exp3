@@ -9,6 +9,6 @@ public class Rectangle {
     }
 
     public int computeArea() {
-        return 0;
+        return height * width;
     }
 }
