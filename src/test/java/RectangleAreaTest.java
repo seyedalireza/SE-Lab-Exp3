@@ -23,4 +23,11 @@ public class RectangleAreaTest {
     public void iExpectTheResult(int expectedResult) {
         assertEquals(expectedResult, result);
     }
+
+    @When("^change height to (\\d+) and width to (\\d+) then compute area$")
+    public void changeHeightToAndWidthToThenComputeArea(int height, int width) {
+        rectangle.setHeight(height);
+        rectangle.setWidth(width);
+        result = rectangle.computeArea();
+    }
 }
